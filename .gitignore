@@ -1,0 +1,18 @@
+# Local Environment Variables & Secrets
+.env
+.env.local
+
+# Python systemic files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+
+# IDE/Editor configurations
+.vscode/
+.idea/
+.DS_Store
