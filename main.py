@@ -1,9 +1,18 @@
 # main.py
 import os
 import sys
+
+from dotenv import load_dotenv
+
+# Automatically find and load the local .env file into machine memory
+load_dotenv()
+
+#Internal Imports
 from src.db_engine import get_db_connection, initialize_fmcg_warehouse, run_read_query
 from src.agent_core import text_to_sql_agent, presentation_agent
 
+
+# Main Code
 def run_analytics_agent(business_question: str):
     print(f"📋 Business User Query: '{business_question}'")
     print("-" * 60)
